@@ -18,7 +18,9 @@ The folder *kubespray* contains:
 
 
 The folder *deployment-scripts* contains the deployment scripts to setup traefik and all the covid DP3T components and get them up and running. 
-- Note that the file 'deployment-scripts/scripts/3.covid-depl.yaml' needs to be updated to point to your source docker repositories
+- running 'deploy-all.sh' in one of the kubernetes controller nodes will apply all the manifests to start the environment
+- running 'undeploy-all.sh' in one of the kubernetes controller nodes will remove all the manifests to start the environment
+- **Note** that the file 'deployment-scripts/scripts/3.covid-depl.yaml' needs to be updated to point to your source docker repositories
 
 Links:
 - Kubespray: https://github.com/kubernetes-sigs/kubespray
